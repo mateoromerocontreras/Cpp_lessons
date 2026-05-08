@@ -14,8 +14,12 @@ int main()
     double quotient, number1 = 132.364, number2 = 26.91;
 
     quotient = number1 / number2;
+    // setw indica la cantidad de digitos que se van a mostrar, pero no redondea el resultado
+    // setprecision indica la cantidad de digitos que se van a mostrar, pero redondea el resultado
 
     cout << quotient << endl;
+
+    cout << setprecision(6) << quotient << endl;
 
     cout << setprecision(5) << quotient << endl;
 
